@@ -1,10 +1,8 @@
 {
   "mcpServers": {
-    "Fetch": {
+    "fetch": {
       "command": "uvx",
-      "args": [
-        "mcp-server-fetch"
-      ],
+      "args": ["mcp-server-fetch"],
       "env": {},
       "disabled": false
     }
