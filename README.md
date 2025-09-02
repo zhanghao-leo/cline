@@ -32,15 +32,15 @@ English | <a href="https://github.com/cline/cline/blob/main/locales/es/README.md
 
 Meet Cline (pronounced /klaɪn/, like "Klein"), an AI assistant that can use your **CLI** a**N**d **E**ditor.
 
-Thanks to [Claude 3.7 Sonnet's agentic coding capabilities](https://www.anthropic.com/claude/sonnet), Cline can handle complex software development tasks step-by-step. With tools that let him create & edit files, explore large projects, use the browser, and execute terminal commands (after you grant permission), he can assist you in ways that go beyond code completion or tech support. Cline can even use the Model Context Protocol (MCP) to create new tools and extend his own capabilities. While autonomous AI scripts traditionally run in sandboxed environments, this extension provides a human-in-the-loop GUI to approve every file change and terminal command, providing a safe and accessible way to explore the potential of agentic AI.
+Powered by [Claude 3.7 Sonnet's agentic coding capabilities](https://www.anthropic.com/claude/sonnet), Cline executes complex development tasks end to end with your approval. He can create and edit files, explore large projects, browse the web, and run terminal commands — all through a human-in-the-loop GUI where you approve every change. Through the Model Context Protocol (MCP), Cline can also add custom tools to extend his capabilities.
 
-1. Enter your task and add images to convert mockups into functional apps or fix bugs with screenshots.
-2. Cline starts by analyzing your file structure & source code ASTs, running regex searches, and reading relevant files to get up to speed in existing projects. By carefully managing what information is added to context, Cline can provide valuable assistance even for large, complex projects without overwhelming the context window.
-3. Once Cline has the information he needs, he can:
-    - Create and edit files + monitor linter/compiler errors along the way, letting him proactively fix issues like missing imports and syntax errors on his own.
-    - Execute commands directly in your terminal and monitor their output as he works, letting him e.g., react to dev server issues after editing a file.
-    - For web development tasks, Cline can launch the site in a headless browser, click, type, scroll, and capture screenshots + console logs, allowing him to fix runtime errors and visual bugs.
-4. When a task is completed, Cline will present the result to you with a terminal command like `open -a "Google Chrome" index.html`, which you run with a click of a button.
+1. Describe your task (attach images for mockups or bug reports if helpful).
+2. Cline inspects your project (structure, ASTs, targeted searches) and brings in only what's relevant — keeping context focused even for large codebases.
+3. Then he can:
+    - Create and edit files while monitoring linter/compiler output to fix issues proactively
+    - Run terminal commands and react to results in real time
+    - For web apps, launch a headless browser to click, type, scroll, and capture screenshots and console logs
+4. When done, Cline provides a command like `open -a "Google Chrome" index.html` for you to run with one click.
 
 > [!TIP]
 > Use the `CMD/CTRL + Shift + P` shortcut to open the command palette and type "Cline: Open In New Tab" to open the extension as a tab in your editor. This lets you use Cline side-by-side with your file explorer, and see how he changes your workspace more clearly.
